@@ -1,0 +1,58 @@
+body,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.tab {
+  width: 50%;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  color: #333333;
+
+  li {
+    border: solid #ffffff 2px;
+    border-radius: 5px;
+
+    a {
+      text-decoration: none;
+      &.active {
+        color: whitesmoke;
+        background-color: #333333;
+      }
+    }
+  }
+}
+
+.tab li:hover {
+  background-color: rgb(197, 197, 197);
+}
+
+.innner {
+  border: 1px solid #333333;
+  min-height: 200px;
+  padding: 30px;
+
+  .content {
+    margin: 0 auto;
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
